@@ -69,9 +69,9 @@ imagesc(mean(bic,3));
 % optimal G=8, M=16
 
 %% one with the best BIC value
-G = 8;
-M = 16;
-NRUN = 10;
+G = 12;
+M = 14;
+NRUN = 20;
 bic = zeros(NRUN,1);
 pi_g = cell(NRUN,1);
 pi_m = cell(NRUN,1);
@@ -87,7 +87,7 @@ parfor k = 1:NRUN
     npara = G-1 + G*(M-1) + sum(grpcate-1)*G + sum(indcate-1)*M;
     bic(k) = -2*max(lik{k}) + log(size(inddata,1))*npara;
 end
-save('res.mat','bic','pi_g','pi_m','log_phi_g','log_phi_m','wj','xjik','lik','G','M');
+save('res_12_14.mat','bic','pi_g','pi_m','log_phi_g','log_phi_m','wj','xjik','lik','G','M');
 %%
 
 

@@ -1,4 +1,4 @@
-% -- Lijun Sun -- %
+x% -- Lijun Sun -- %
 % -- last modified: September 2, 2017 -- %
 
 clearvars;
@@ -30,9 +30,9 @@ grpcate = max(grpdata);
 indcate = max(inddata);
 
 %%
-load('res.mat');
+load('res_12_14.mat');
 plot(bic);
-x = 2; % find the best solution (minimum bic)
+x = 1; % find the best solution (minimum bic)
 pi_m = pi_m{x};
 pi_g = pi_g{x};
 log_phi_g = log_phi_g{x};

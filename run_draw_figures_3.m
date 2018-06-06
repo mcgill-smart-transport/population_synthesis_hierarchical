@@ -82,7 +82,7 @@ for att = 1:length(indlvl)
         'XMinorTick','off','YMinorTick','on','ZMinorTick','on','YGrid','off','XColor',[.15,.15,.15],'YColor',[.15,.15,.15],'ZColor',[.15,.15,.15],'LineWidth',0.5);
 end
 
-name = 'fig_marginal.pdf';
+name = 'fig_marginal.eps';
 export_fig(name,'-pdf','-transparent','-painters','-rgb');
 close all;
 system(['start ',name]);
@@ -312,7 +312,7 @@ ylim([0,m*1.1]);
 
 
 
-name = 'fig_tucker_individual.pdf';
+name = 'fig_tucker_individual.eps';
 export_fig(name,'-pdf','-transparent','-painters','-rgb');
 close all;
 system(['start ',name]);
@@ -384,7 +384,7 @@ set(h_bar,'ticklength',0.015,'LineWidth',0.1);
 set(h_bar,'ylim',[0,0.5]);
 
 
-name = 'fig_compare_joint.pdf';
+name = 'fig_compare_joint.eps';
 export_fig(name,'-pdf','-transparent','-painters','-cmyk');
 %close all;
 system(['start ',name]);

@@ -66,7 +66,7 @@ set(h_bar, 'Position',pos2);
 set(h_bar,'ticklength',0.015,'LineWidth',0.1);
 set(h_bar,'ylim',[0,0.7]);
 
-name = 'fig_compare_two_people.pdf';
+name = 'fig_compare_two_people.eps';
 export_fig(name,'-pdf','-transparent','-painters','-rgb');
 %close all;
 system(['start ',name]);
@@ -149,7 +149,7 @@ set(h_bar, 'Position',pos2);
 set(h_bar,'ticklength',0.015,'LineWidth',0.1);
 set(h_bar,'ylim',[0,0.4]);
 
-name = 'fig_rejection.pdf';
+name = 'fig_rejection.eps';
 export_fig(name,'-pdf','-transparent','-painters','-rgb');
 system(['start ',name]);
 
@@ -174,6 +174,7 @@ subplot(1,2,2); imagesc(hist3(temp1r(:,[1,2]),{1:14,1:14}));
 
 %% rejection compare
 close all;
+clc;
 h = fig('units','centimeters','width',18,'height',5,'font','helvetica','fontsize',7,'border','off');
 tempr = [grpdata(indgid,4),inddata];
 tempr = tempr(tempr(:,1)==2,:);
@@ -237,8 +238,9 @@ set(h_bar, 'Position',pos2);
 set(h_bar,'ticklength',0.015,'LineWidth',0.1);
 set(h_bar,'ylim',[0,0.7]);
 
-name = 'fig_compare_two_people_rejection.pdf';
-export_fig(name,'-pdf','-transparent','-painters','-rgb');
+name = 'fig_compare_two_people_rejection.eps';
+%export_fig(name,'-pdf','-transparent','-painters','-rgb');
+export_fig(name,'-depsc');
 close all;
 system(['start ',name]);
 
