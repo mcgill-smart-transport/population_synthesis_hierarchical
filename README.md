@@ -1,8 +1,8 @@
-# population_synthesis_hierarchical
+# population synthesis hierarchical
 
-code for population systhesis using a product multinomial hierarchical mixture model
+code for population synthesis using a product multinomial hierarchical mixture model
 
-please consider to cite [this paper](https://doi.org/10.1016/j.trb.2018.06.002) if using the code.
+please consider citing [this paper](https://doi.org/10.1016/j.trb.2018.06.002) if using the code:
 
 @article{sun2018hierarchical,  
   title={A hierarchical mixture modeling framework for population synthesis},  
