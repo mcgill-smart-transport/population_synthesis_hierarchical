@@ -13,3 +13,6 @@ please consider citing [this paper](https://doi.org/10.1016/j.trb.2018.06.002) i
   year={2018},  
   publisher={Elsevier}  
 }  
+
+
+Some functions are from [MATLAB Tensor Toolbox](https://www.sandia.gov/~tgkolda/TensorToolbox/index-2.6.html) and [Lightspeed Matlab Toolbox](https://github.com/tminka/lightspeed).
