@@ -1,4 +1,4 @@
-x% -- Lijun Sun -- %
+% -- Lijun Sun -- %
 % -- last modified: September 2, 2017 -- %
 
 clearvars;
